@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Volunteer Hours</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f6ff;
+            text-align: center;
+        }
+
+        .box {
+            width: 350px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Submit Volunteer Hours</h1>
+
+    <input type="text" placeholder="Activity Name">
+
+    <input type="date">
+
+    <input type="number" placeholder="Hours Worked">
+
+    <textarea placeholder="Description"></textarea>
+
+    <br><br>
+
+    <button onclick="submitHours()">
+        Submit Hours
+    </button>
+
+</div>
+
+<script>
+function submitHours() {
+    alert("Volunteer hours submitted successfully!");
+}
+</script>
+
+</body>
+</html>
