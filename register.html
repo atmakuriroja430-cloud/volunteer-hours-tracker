@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volunteer Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f6ff;
+            text-align: center;
+        }
+
+        .box {
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>Volunteer Registration</h1>
+
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <br><br>
+
+    <button onclick="register()">Register</button>
+</div>
+
+<script>
+function register() {
+    alert("Registration Successful!");
+}
+</script>
+
+</body>
+</html>
