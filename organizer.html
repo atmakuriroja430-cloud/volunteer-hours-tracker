@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Organizer Verification</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f6ff;
+            text-align: center;
+        }
+
+        .box {
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .approve {
+            background-color: green;
+        }
+
+        .reject {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Organizer Verification</h1>
+
+    <h3>Activity: Tree Plantation</h3>
+    <p>Date: 10-09-2026</p>
+    <p>Hours: 5 Hours</p>
+    <p>Description: Participated in campus tree plantation.</p>
+
+    <h3 id="status">Status: Pending ⏳</h3>
+
+    <button class="approve" onclick="approve()">
+        Approve
+    </button>
+
+    <button class="reject" onclick="reject()">
+        Reject
+    </button>
+
+</div>
+
+<script>
+function approve() {
+    document.getElementById("status").innerHTML =
+        "Status: Approved ✅";
+}
+
+function reject() {
+    document.getElementById("status").innerHTML =
+        "Status: Rejected ❌";
+}
+</script>
+
+</body>
+</html>
